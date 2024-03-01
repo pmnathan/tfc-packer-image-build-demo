@@ -9,5 +9,13 @@ The main benefits of this approach include:
 - Seamless integration with HCP Packer
 - Consolidation of image build and usage within the same platform (Terraform Cloud is used to provision VMs using images built within Terraform Cloud)
 
-What changes are required:
-Packer Binary should be bundled in the same image as TFC agent. Dockerfile example provided.
+## Setup
+
+1. Packer Binary should be bundled in the same image as TFC agent. Dockerfile example provided. This Experiment assumes that TFC Agents are in use.
+
+2. Connect Repo to TFC Workspace
+
+3. Configure Variables
+![TFC Variables](/variables.png)
+
+4. Plan and Apply
